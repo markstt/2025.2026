@@ -36,3 +36,9 @@ krasas.append(input("Ievadi savu pirmo iecienītāko krāsu:"))
 krasas.append(input("Ievadi savu otro iecienītāko krāsu:"))  
 krasas.append(input("Ievadi savu trešo iecienītāko krāsu:"))
 print(krasas)
+#Saglabā datus vārdnīcā (dictionary)
+profils = {}
+profils["vards"] = vards
+profils["vecums"] = vecums
+profils["krasas"] = krasas
+print("Tava informacija:", profils)

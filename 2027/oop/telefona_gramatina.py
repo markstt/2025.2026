@@ -14,6 +14,7 @@ print("Kontakts1, pirms izmainam:",kontakts1.uzvards)
 kontakts1.uzvards = "Kalniņš"
 print(kontakts1.uzvards)
 print(kontakts1.talruins)
+kontakts1.talruins = "26999999"
 print(kontakts1.epasts)
 kontakts1.epasts = "janiskalnins@gmail.com"
 kontakts2 = Kontakts("Anna", "Kalniņa", "29876543", "anna.kalnina@gmail.com")
@@ -23,3 +24,4 @@ print(kontakts2.talruins)
 print(kontakts2.epasts)
 print("Kontakts1:", kontakts1.uzvards)
 print(kontakts1.epasts)
+print(kontakts1.talruins)

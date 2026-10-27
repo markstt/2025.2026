@@ -6,7 +6,7 @@ class Kontakts:
         self.uzvards = uzvards
         self.talruins = talrunis
         self.epasts = epasts
-kontakts1 = Kontakts("Jānis", "Bērziņš", "26123456", "janiisberzins@gmail.com");
+kontakts1 = Kontakts("Jānis", "Bērziņš", "26123456", "janiisberzins@gmail.com")
 
 print( kontakts1.vards)
 

@@ -1,4 +1,4 @@
-#27/10/2026
+#27/10/2026 un 03/11/2026
 #OOP pamatprincipi
 #Objekts
 #Objekta ipašības
@@ -13,7 +13,17 @@ class Masina:#Objekta nosaukums vienmer ar lielo burtu!!!!!!!!!!!!!!!!!!!!!!!!!!
         self.modelis = modelis
         self.krasa = krasa
         #Ipasiba ar noklusēto vērtību
+        
         self.atrums = 0
+    #Metode
+    def paatrinaties(self):
+        self.atrums += 10
+    def paraditinfo(self):
+        print("Marka: ",  self.marka)
+        print("Modelis: " , self.modelis)
+        print("Krasa: ", self.krasa)
+        print("Atrums: ", self.atrums)     #Ipasiba ar noklusēto vērtību
+                
 #Pirma objekta izveide
 mansAuto = Masina("Audi", "R6", "melna")
 print(mansAuto.marka)
@@ -22,6 +32,7 @@ print(mansAuto.krasa)
 print(mansAuto.atrums)
 
 mansAuto.atrums = 50
+
 print(mansAuto.atrums)
 
 tavs = Masina("VOLVO", "V40", "zala")
@@ -31,3 +42,14 @@ print(tavs.krasa)
 print(tavs.atrums)
 tavs.atrums = 75
 print("Tāvs atrums:", tavs.atrums)
+mansAuto.paatrinaties()
+tavs.paatrinaties()
+print("Jaunaijs atrums: " , mansAuto.atrums)
+print("Jaunaijs atrums tavam: " , tavs.atrums)
+
+print("Mana auto info")
+print("Tava auto info")
+mansAuto.paraditinfo()
+tavs.paraditinfo()
+
+

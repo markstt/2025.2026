@@ -77,17 +77,22 @@ class BankasKonts:
             print("Izņemta summa:", summa, "EUR")
         else:
             print("Nepietiek līdzekļu!")
-
+    def uz_failu(self):
+        with open("C:/Users/Marks/Documents/2025.2026/2027/oop/bankas_konts.csv" , "w", encoding="utf-8" ) as fails:
+            fails.write(self.ipasnieks + "\n")
+            fails.write(self.konta_numurs + "\n")
+            fails.write(str(self.atlikums))
 mans_konts = BankasKonts("Jānis Bērziņš", "LV123BANK0001", 0.0)
     
 print("Konta info")
 mans_konts.paradit_info()
 print("Iemaksājam naudu")
-mans_konts.iemaksat(100)
+mans_konts.iemaksat(55.9)
 mans_konts.paradit_info()
 print("Izmakasajam naudu")
-mans_konts.iznemt(30)
+mans_konts.iznemt(15)
 
 
 mans_konts.iznemt(80)#Meigniam iznemt vairak neka ir konta
 mans_konts.paradit_info()
+mans_konts.uz_failu()
